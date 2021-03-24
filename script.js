@@ -1,4 +1,4 @@
-const nav = document.querySelector(".nav");
+const nav = document.querySelector(".topnav");
 window.addEventListener("scroll", fixNav);
 
 function fixNav() {
@@ -9,11 +9,15 @@ function fixNav() {
   }
 }
 
-function showNav() {
-  let x = document.getElementById("responsiveID");
-  if (x.className === "responsive") {
-    x.classList.remove("responsive");
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
   } else {
-    x.classList.add("responsive");
+    x.className = "topnav";
   }
 }
+
+let d = new Date();
+let y = d.getFullYear();
+document.getElementById("yearID").innerHTML = y;
