@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="fanArtStyle.css" />
+    <title>Pokémon Fan-Art</title>
+  </head>
+  <body>
+    <div class="topnav" id="myTopnav">
+      <a href="/index.html">Home</a>
+      <a href="/fakedexart.html">Fakédex Art</a>
+      <a href="/fanart.html" class="current">Pokémon Fan-Art</a>
+      <a href="pokedex.html">Pokédex</a>
+      <a href="#">Contact</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    <div class="slider-container">
+      <div
+        class="slide active2"
+        style="background-image: url(/images/pikachu.jpg)"
+      ></div>
+      <div
+        class="slide"
+        style="background-image: url(/images/charizard.jpg)"
+      ></div>
+      <div
+        class="slide"
+        style="background-image: url(/images/gyarados.jpg)"
+      ></div>
+      <div
+        class="slide"
+        style="background-image: url(/images/luxray.jpg)"
+      ></div>
+      <button class="arrow left-arrow" id="left">
+        <i class="fas fa-arrow-left"></i>
+      </button>
+      <button class="arrow right-arrow" id="right">
+        <i class="fas fa-arrow-right"></i>
+      </button>
+    </div>
+    <div class="footer">
+      <p>&copy;<span id="yearID">Year</span> HawkTech Industries</p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
