@@ -1,3 +1,7 @@
+let d = new Date();
+let y = d.getFullYear();
+document.getElementById("yearID").innerHTML = y;
+
 const nav = document.querySelector(".topnav");
 window.addEventListener("scroll", fixNav);
 
@@ -75,7 +79,3 @@ function setActiveSlide() {
 
   slides[activeSlide].classList.add("active2");
 }
-
-let d = new Date();
-let y = d.getFullYear();
-document.getElementById("yearID").innerHTML = y;
